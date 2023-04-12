@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PIZZABEK</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles/index.css" />
+  </head>
+
+  <body>
+    <header>
+      <div
+        class="modal modal-xl fade"
+        id="staticBackdrop"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+        style="width: 100%;
+        height: 100%;"
+      >
+        <div class="modal-dialog">
+          <div style="width: 100%; height: 100%;" class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                <div class="d-flex align-items-center gap-2">
+                  <img
+                    width="30"
+                    src="./images/pizza-logo.png"
+                    alt="Navbar logo"
+                  />
+                  <h4>PIZZABEK</h4>
+                </div>
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="col-sm-12 savatcha">
+                <h2>Savatcha bo'sh</h2>
+                <p>
+                  Siz hali pitsa buyurtma qilmagan bo'lsangiz kerak. <br />
+                  Pitsaga buyurtma berish uchun asosiy sahifaga o'ting.
+                </p>
+                <img
+                  style="width: 100%"
+                  src="./images/karzinka-empty.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <nav>
+        <div class="wrapper my-2">
+          <div
+            class="container d-flex justify-content-around align-items-center py-3"
+          >
+            <div class="d-flex align-items-center gap-2">
+              <img width="30" src="./images/pizza-logo.png" alt="Navbar logo" />
+              <div class="pizza-text">
+                <h4>PIZZABEK</h4>
+                <p>eng mazali pitsalar faqatgina bizda)</p>
+              </div>
+            </div>
+            <form action="" id="form">
+              <input
+                id="input"
+                style="width: 40%"
+                type="text"
+                class="form-control"
+                placeholder="Search products"
+              />
+            </form>
+            <div class="d-flex align-items-center gap-3 bag">
+              <span class="text-light" style="font-size: 20px">
+                <span
+                  id="total"
+                  style="padding-right: 10px ;"
+                  class="text-warning product-price"
+                  ></span
+                > |
+              </span>
+              <button
+                type="button"
+                class="btn text-light d-flex align-items-center gap-1"
+                data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop"
+              >
+                <img width="20" src="./images/karzinka.png" alt="" />
+                <span></span> <span id="badge">0</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container my-5">
+        <div class="d-flex flex-md-row gap-3 menus-pizza">
+          <button id="barchasi" class="filt-btn">Barchasi</button>
+          <button id="gushtli" class="filt-btn">Gushtli</button>
+          <button id="pishloqli" class="filt-btn">Pishloqli</button>
+          <button id="quziqorinli" class="filt-btn">Quziqorinli</button>
+          <button id="achchiq" class="filt-btn">Achchiq</button>
+        </div>
+
+<div
+          id="root"
+          class="d-flex align-items-center justify-content-between flex-wrap gap-4"
+        ></div>
+      </div>
+    </main>
+
+    <script src="./products.js"></script>
+    <script src="./main.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
